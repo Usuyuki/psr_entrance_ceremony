@@ -6,6 +6,8 @@ PSR 入学式
 
 # 環境構築
 
+公開ディレクトリは public にしているが、docker にマウントしてるディレクトリは DocumentRoot 全体(composer コマンド実行するため)
+
 ```
 docker-compose up -d
 ```
