@@ -3,6 +3,15 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
 
+//エラー時にかっこいい表示をする
+error_reporting(-1);
+$whoops = new \Whoops\Run;
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->register();
+
+//意図的なエラー
+echo $aa;
+
 $creator = new \Nyholm\Psr7Server\ServerRequestCreator(
     $psr17Factory, // ServerRequestFactory
     $psr17Factory, // UriFactory
@@ -12,4 +21,4 @@ $creator = new \Nyholm\Psr7Server\ServerRequestCreator(
 
 $serverRequest = $creator->fromGlobals();
 
-var_dump($serverRequest->getUri());
+dd($serverRequest->getUri());
