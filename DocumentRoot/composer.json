@@ -1,4 +1,9 @@
 {
+  "autoload": {
+    "psr-4": {
+      "usuyuki\\MyPsr\\": "src"
+    }
+  },
   "require": {
     "php": "^8.0",
     "nyholm/psr7": "^1.5",
