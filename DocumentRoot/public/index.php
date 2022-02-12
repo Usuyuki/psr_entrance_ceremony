@@ -10,7 +10,7 @@ $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->register();
 
 //意図的なエラー
-echo $aa;
+// echo $aa;
 
 $creator = new \Nyholm\Psr7Server\ServerRequestCreator(
     $psr17Factory, // ServerRequestFactory
@@ -21,4 +21,10 @@ $creator = new \Nyholm\Psr7Server\ServerRequestCreator(
 
 $serverRequest = $creator->fromGlobals();
 
-dd($serverRequest->getUri());
+$path=$serverRequest->getUri()->getPath();
+
+// dd($path);
+
+if($path==='/now'){
+    echo date('Y年m月d日 H時i分s秒');
+}

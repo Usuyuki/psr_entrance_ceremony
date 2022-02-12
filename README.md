@@ -21,7 +21,7 @@ docker-compose exec php bash
 だが、初期だと違うディレクトリなので
 
 ```
-cd /usr/share/nginx/html
+cd /usr/share/nginx
 ```
 
 に移動してから composer コマンドとか打つ
