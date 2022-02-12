@@ -12,7 +12,7 @@ use Psr\Http\Message\ServerRequestInterface;
  * implementsの後にあるのがインターフェイスで、それをDataActionというクラスで実装している
  * この書き方のクラスではRequestHandlerInterfaceのメソッドを全部実装しないとエラー出す
  */
-class DataAction implements RequestHandlerInterface
+class DateAction implements RequestHandlerInterface
 {
     public function handle(ServerRequestInterface $request): ResponseInterface{
         $psr17Factory=new \Nyholm\Psr7\Factory\Psr17Factory();

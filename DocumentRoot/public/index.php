@@ -31,7 +31,7 @@ use Psr\Http\Server\RequestHamdlerInterface;
 
 if ($path==='/') {
     // $response=$psr17Factory->createResponse(200)->withBody($psr17Factory->createStream(date('Y年m月d日 H時i分s秒') ));
-    $handler=new \usuyuki\MyPsr\Http\Handler\DataAction();
+    $handler=new \usuyuki\MyPsr\Http\Handler\DateAction();
     $response=$handler->handle($serverRequest);
 }
 
