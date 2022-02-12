@@ -1,12 +1,13 @@
 <?php
+
 require __DIR__ . '/../vendor/autoload.php';
 
 $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
 
 //エラー時にかっこいい表示をする
 error_reporting(-1);
-$whoops = new \Whoops\Run;
-$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops = new \Whoops\Run();
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
 $whoops->register();
 
 //意図的なエラー
@@ -25,6 +26,6 @@ $path=$serverRequest->getUri()->getPath();
 
 // dd($path);
 
-if($path==='/now'){
+if ($path==='/now') {
     echo date('Y年m月d日 H時i分s秒');
 }

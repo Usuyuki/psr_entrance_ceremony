@@ -39,3 +39,13 @@ https://qiita.com/si-ma/items/805c3323ea7573f61727
 # エラー対処
 
 https://akamist.com/blog/archives/246
+
+## ./vendor/bin/php-cs-fixer fix
+
+```
+  Configuration file `.php_cs.dist` is outdated, rename to `.php-cs-fixer.dist.php`.
+```
+
+と言われたため、名前を変更
+
+.php_cs.dist→.php-cs-fixer.dist.php
