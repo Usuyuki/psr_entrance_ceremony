@@ -8,7 +8,7 @@ use Psr\Http\Message\ServerRequestInterface;
 
 
 /**
- * 宣言したインターフェイス(interface hoge)を実装したクラスがDataActions 
+ * 宣言したインターフェイス(interface hoge)を実装したクラスがDateActions 
  * implementsの後にあるのがインターフェイスで、それをDataActionというクラスで実装している
  * この書き方のクラスではRequestHandlerInterfaceのメソッドを全部実装しないとエラー出す
  */

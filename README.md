@@ -26,6 +26,13 @@ cd /usr/share/nginx
 
 に移動してから composer コマンドとか打つ
 
+# できること
+
+https://localhost:2011/
+で現在時刻を表示
+
+それ以外のページで 404 を返す
+
 # 資料
 
 https://hackmd.io/@uzulla/Bk1JDuO8u
