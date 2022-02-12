@@ -2,7 +2,7 @@
 
 # psr_entrance_ceremony_with_tadsan
 
-PSR 入学式
+[PSR 入学式-1 a 枠](https://hackmd.io/@uzulla/Bk1JDuO8u)を用いて学習
 
 # 環境構築
 
@@ -28,7 +28,7 @@ cd /usr/share/nginx/html
 
 # 資料
 
-[PSR 入学式-1 a 枠](https://hackmd.io/@uzulla/Bk1JDuO8u)
+https://hackmd.io/@uzulla/Bk1JDuO8u
 
 # docker 構築参考
 
