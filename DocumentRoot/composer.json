@@ -2,7 +2,8 @@
   "require": {
     "php": "^8.0",
     "nyholm/psr7": "^1.5",
-    "nyholm/psr7-server": "^1.0"
+    "nyholm/psr7-server": "^1.0",
+    "laminas/laminas-httphandlerrunner": "^2.1"
   },
   "require-dev": {
     "symfony/var-dumper": "^6.0",
